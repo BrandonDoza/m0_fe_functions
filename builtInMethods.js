@@ -7,16 +7,20 @@
 // No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
 // The return value is "hello world"
 "Hello World".toLowerCase();
-
+/* The method is changing all the letters in the string to 
+lower case.  */
 
 "Hello World".includes("Hello");
-
+/* The method is checking to see is the string contains the word
+hello, and returning the boolean true. */
 
 "Hello World".endsWith("Hello");
-
+/* The method is checking to see if the string ends with the word 
+hello and returning a boolean false.  */
 
 "Hello World".endsWith("rld");
-
+/* The method is checking to see if the string ends with the letters 
+rld and returning a boolean true  */
 
 
 // SECTION 2: Calling methods on variables assigned to strings.
@@ -33,6 +37,13 @@
 var firstName = "Jeff";
 console.log(firstName.startsWith("J"));
 
+var dogsName = "Kevin"
+var streetName = "Maple Hill"
+console.log(dogsName.toUpperCase())
+console.log(streetName.endsWith("Hill"))
+
+
+
 
 
 // SECTION 3: Calling methods on variables assigned to arrays.
@@ -40,3 +51,11 @@ console.log(firstName.startsWith("J"));
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+
+var numbers = [3, 2, 1]
+var names = ["Michelle", "Brad", "Ellie:"]
+/* This method call sorted the numbers in the array into numerical order */
+console.log(numbers.sort())
+/* This method call reversed the order of the names in the array */
+console.log(names.reverse())
+
